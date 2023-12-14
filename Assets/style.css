@@ -7,8 +7,8 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    text-align: center; /* Center text horizontally */
 }
-
 
 header {
     background-color: var(--primary-color);
@@ -17,11 +17,11 @@ header {
 
 /* Styling for avatar image. */
 #about img {
-    width: 200px; /* Adjust the size as needed */
+    width: 200px;
     height: auto;
-    border-radius: 50%; /* To make the image circular for a typical avatar effect */
+    border-radius: 50%;
     display: block;
-    margin: 0 auto 20px; /* Add margin to center the image and create space below it */
+    margin: 0 auto 20px;
 }
 
 nav ul {
@@ -49,7 +49,7 @@ nav ul li a {
 .work-sample {
     border: 1px solid #ccc;
     padding: 20px;
-    margin: 10px;
+    margin: 10px auto; /* Center the work samples horizontally */
     max-width: 300px;
 }
 
@@ -60,7 +60,7 @@ nav ul li a {
 }
 
 .work-sample.larger {
-    transform: scale(1.1); /* Larger first work sample */
+    transform: scale(1.1);
 }
 
 footer {
