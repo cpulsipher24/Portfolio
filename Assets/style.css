@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #3498db;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+/* Styling for avatar image. */
+#about img {
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%; /* To make the image circular for a typical avatar effect */
+    display: block;
+    margin: 0 auto 20px; /* Add margin to center the image and create space below it */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Work sample layout using flexbox and larger image */
+.work-samples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-sample {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.work-sample img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.work-sample.larger {
+    transform: scale(1.1); /* Larger first work sample */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
