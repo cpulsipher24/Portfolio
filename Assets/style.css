@@ -43,14 +43,22 @@ nav ul li a {
 .work-samples {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Center the work samples horizontally */
+    margin: auto; /* Center the .work-samples container */
 }
 
 .work-sample {
     border: 1px solid #ccc;
     padding: 20px;
-    margin: 10px auto; /* Center the work samples horizontally */
+    margin: 10px;
     max-width: 300px;
+    text-align: center; /* Center text inside the work sample */
+}
+
+.work-sample.larger img {
+    width: 100%; /* Make the larger image fit within the container */
+    max-width: 100%; /* Ensure the image does not exceed its original size */
+    height: auto;
 }
 
 .work-sample img {
@@ -68,3 +76,5 @@ footer {
     padding: 10px;
     background-color: #f2f2f2;
 }
+
+
