@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    padding: 10px 0;
+    padding: 40px 0; /* Increased padding for more height */
 }
 
 /* Styling for avatar image. */
@@ -21,17 +21,18 @@ header {
     height: auto;
     border-radius: 50%;
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 60px; /* Increased margin for more height */
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    margin-bottom: 40px; /* Increased margin for more height */
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 20px; /* Increased margin for more space between navigation items */
 }
 
 nav ul li a {
@@ -42,22 +43,22 @@ nav ul li a {
 /* Work sample layout using flexbox and larger image */
 .work-samples {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the work samples horizontally */
-    margin: auto; /* Center the .work-samples container */
+    flex-direction: column; 
+    align-items: center; 
+    margin: auto; 
 }
 
 .work-sample {
     border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
+    padding: 50px; 
+    margin: 30px;
     max-width: 300px;
-    text-align: center; /* Center text inside the work sample */
+    text-align: center; 
 }
 
 .work-sample.larger img {
-    width: 100%; /* Make the larger image fit within the container */
-    max-width: 100%; /* Ensure the image does not exceed its original size */
+    width: 100%; 
+    max-width: 100%; 
     height: auto;
 }
 
@@ -73,8 +74,10 @@ nav ul li a {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 40px;
     background-color: #f2f2f2;
 }
+
+
 
 
